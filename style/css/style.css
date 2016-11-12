@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic');
+
+
+body {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: black;
+  min-width: 960px;
+}
+
+.container {
+  width: 960px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+/*
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-aeg {
+    width: 151px;
+    height: 96px;
+    background-position: -5px -5px;
+}
+
+.sprite-bosch {
+    width: 126px;
+    height: 37px;
+    background-position: -166px -5px;
+}
+
+.sprite-bucket {
+    width: 44px;
+    height: 65px;
+    background-position: -302px -5px;
+}
+
+.sprite-credit {
+    width: 465px;
+    height: 285px;
+    background-position: -356px -5px;
+}
+
+.sprite-dewalt {
+    width: 146px;
+    height: 44px;
+    background-position: -5px -300px;
+}
+
+.sprite-hitachi {
+    width: 169px;
+    height: 31px;
+    background-position: -161px -300px;
+}
+
+.sprite-interskol {
+    width: 200px;
+    height: 88px;
+    background-position: -340px -300px;
+}
+
+.sprite-lg {
+    width: 121px;
+    height: 73px;
+    background-position: -550px -300px;
+}
+
+.sprite-makita {
+    width: 123px;
+    height: 40px;
+    background-position: -681px -300px;
+}
+
+.sprite-medal {
+    width: 389px;
+    height: 283px;
+    background-position: -5px -398px;
+}
+
+.sprite-metabo {
+    width: 204px;
+    height: 69px;
+    background-position: -550px -383px;
+}
+
+.sprite-shipcar_shadow {
+    width: 468px;
+    height: 261px;
+    background-position: -831px -5px;
+}
+
+.sprite-shipping {
+    width: 78px;
+    height: 63px;
+    background-position: -831px -276px;
+}
+
+.sprite-slider-1-mask {
+    width: 620px;
+    height: 105px;
+    background-position: -404px -462px;
+}
+
+.sprite-slider-2-mask {
+    width: 620px;
+    height: 105px;
+    background-position: -404px -577px;
+}
+
+.sprite-temp-map {
+    width: 300px;
+    height: 157px;
+    background-position: -919px -276px;
+}
+
+.sprite-tool {
+    width: 75px;
+    height: 61px;
+    background-position: -1229px -276px;
+}
+
+.sprite-trolley {
+    width: 59px;
+    height: 72px;
+    background-position: -1229px -347px;
+}
+
+.sprite-vehicle {
+    width: 78px;
+    height: 62px;
+    background-position: -1229px -429px;
+}
+*/
