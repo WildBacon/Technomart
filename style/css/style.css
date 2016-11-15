@@ -2,6 +2,16 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic');
 
+ @font-face {
+  font-family: 'symbols-technomart';
+  src: url('../font/symbols-technomart.eot?23527613');
+  src: url('../font/symbols-technomart.eot?23527613#iefix') format('embedded-opentype'),
+       url('../font/symbols-technomart.woff?23527613') format('woff'),
+       url('../font/symbols-technomart.ttf?23527613') format('truetype'),
+       url('../font/symbols-technomart.svg?23527613#symbols-technomart') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-family: 'Cuprum', 'Arial', sans-serif;
@@ -12,10 +22,192 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 940px;
   padding: 0 10px;
   margin: 0 auto;
 }
+
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  padding: 0;
+  margin: 0;
+}
+
+.top-panel {
+  background: #293449;
+}
+
+.top-panel a,
+.top-panel input {
+  color: white;
+  box-sizing: border-box;
+  height: 42px;
+}
+
+.logo {
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+}
+
+.top-panel form {
+  padding-left: 40px;
+  float: left;
+}
+
+.order-btn,
+.basket,
+.bookmark
+{
+  float: right;
+  margin-left: 30px;
+}
+
+.order-btn {
+  width: 150px;
+}
+
+.middle-panel {
+  margin: 50px 0 40px;
+}
+
+.description {
+  width: 190px;
+  margin-left: 50px;
+  margin-right: 80px;
+  float: left;
+}
+
+.header-contacts {
+  float: left;
+}
+
+.user-block {
+  float: right;
+}
+
+.main-nav {
+  margin-bottom: 60px;
+  font-size: 0;
+  text-align: center;
+}
+
+.main-nav li {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.modal-grid {
+  height: 460px;
+  background: #f1f1f1;
+  margin: 60px 0 50px;
+}
+
+.popular {
+  
+}
+
+.goods {
+  
+}
+
+.bar {
+  padding: 30px;
+  position: relative;
+  
+  margin-bottom: 20px;
+}
+
+.bar h2 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.bar a {
+  position: absolute;
+  width: 253px;
+  box-sizing: border-box;
+  top: 24px; 
+  right: 24px;
+}
+
+.goods-block {
+  font-size: 0;
+}
+
+.good-item {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.good-item:nth-child(4n){
+  margin-right: 0;
+}
+
+.manufac {
+  margin-bottom: 65px;
+}
+
+.manufac-block {
+  font-size: 0;
+}
+
+.manufac-item {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  width: 220px;
+  height: 145px;
+  box-sizing: border-box;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.manufac-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.service-block {
+  height: 520px;
+  background: #f2f6f8;
+  margin-bottom: 80px;
+}
+
+.about {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 
 .sprite {
