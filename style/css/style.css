@@ -33,9 +33,22 @@ body {
   clear: both;
 }
 
+.display-flex {
+  display: -webkit-box;
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex; 
+}
+
 h1,h2,h3,h4,h5,h6,p {
   padding: 0;
   margin: 0;
+}
+
+ul,li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .top-panel {
@@ -57,19 +70,18 @@ h1,h2,h3,h4,h5,h6,p {
 
 .top-panel form {
   padding-left: 40px;
-  float: left;
 }
 
-.order-btn,
-.basket,
 .bookmark
 {
-  float: right;
-  margin-left: 30px;
+  margin-left: auto;
 }
-
+.basket {
+  margin-left: 20px;
+}
 .order-btn {
   width: 150px;
+  margin-left: 20px;
 }
 
 .middle-panel {
@@ -93,14 +105,23 @@ h1,h2,h3,h4,h5,h6,p {
 
 .main-nav {
   margin-bottom: 60px;
-  font-size: 0;
-  text-align: center;
 }
 
-.main-nav li {
-  font-size: 16px;
-  display: inline-block;
-  vertical-align: top;
+.main-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
+  display: flex;  
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+}
+
+.nav-item {
+  
+}
+
+.nav-item a {
+  
 }
 
 .modal-grid {
@@ -185,22 +206,58 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .about {
-  
+  margin-bottom: 90px;
 }
 
+.about-us {
+  float: left;
+  width: 540px;
+  margin-right: 100px;
+}
 
+.contact-block {
+  float: right;
+  width: 300px;
+}
 
+.main-footer .container { 
+  flex-wrap: wrap;
+}
 
+.top-footer {
+  flex-basis: 100%; 
+}
 
+.logo-footer {
+  margin-right: auto;
+}
 
+.middle-footer {
+  flex-basis: 100%; 
+}
 
+.footer-contacts {
+  margin-right: auto;
+}
 
+.down-footer {;
+  flex-basis: 100%;
+}
 
+.copyright {
+  width: 230px;
+  box-sizing: border-box;
+}
 
+.social-block {
+  margin: auto;
+}
 
-
-
-
+.feedback,
+.autor {
+  width: 140px;
+  box-sizing: border-box;
+}
 
 
 

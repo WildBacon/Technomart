@@ -12,18 +12,18 @@
    
     <header class="main-header">
       <div class="top-panel">
-        <div class="container clearfix">
+        <div class="container clearfix display-flex">
           <a href="index.html" class="logo">Техномарт</a>
           <form action="/" method="post">
             <input type="search" id="search" name="search" placeholder="Поиск">
           </form>
-          <a href="#" class="btn order-btn">Оформить заказ</a>
+           <a href="#" class="bookmark">
+            Закладки:<output>0</output>
+          </a>
           <a href="#" class="basket">
             Корзина:<output>0</output>
           </a>
-          <a href="#" class="bookmark">
-            Закладки:<output>0</output>
-          </a>
+           <a href="#" class="btn order-btn">Оформить заказ</a>
         </div>
       </div>
       
@@ -146,7 +146,7 @@
             <a href="#" class="btn">Отправить заявку</a>
           </div>
         </section>
-        <section class="about">
+        <section class="about clearfix">
           <div class="about-us">
             <h3>Компания «Техномарт»</h3>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
@@ -169,31 +169,27 @@
       </div>
     </main>
     
-    <footer>
-      <div class="container">
-        <div class="top-footer">
-          <h2 class="logo-footer">Техномарт</h2>
-          <ul class="footer-list">
-            <li class="footer-li">Доставка</li>
-            <li class="footer-li">Новости</li>
-            <li class="footer-li">Каталог</li>
-            <li class="footer-li">Доставка</li>
-            <li class="footer-li">Контакты</li>
-          </ul>
+    <footer class="main-footer">
+      <div class="container display-flex">
+        <div class="top-footer display-flex">
+          <a href="index.html" class="logo-footer">Техномарт</a>
+          <a href="#" class="footer-item">Доставка</a>
+          <a href="#" class="footer-item">Новости</a>
+          <a href="#" class="footer-item">Каталог</a>
+          <a href="#" class="footer-item">Доставка</a>
+          <a href="#" class="footer-item">Контакты</a>
         </div>
-        <div class="middle-footer">
+        <div class="middle-footer display-flex">
           <div class="footer-contacts">
             <p class="phone">+7 (495) 555-05-55</p>
             <p class="adress">Москва, ул. Строителей, д. 15</p>
           </div>
-          <ul class="footer-list">
-            <li class="footer-li golden-text">Материалы</li>
-            <li class="footer-li golden-text">Техника</li>
-            <li class="footer-li golden-text">Инструмент</li>
-            <li class="footer-li golden-text">Спецпредложения</li>
-          </ul>
+          <a href="#" class="footer-item golden-text">Материалы</a>
+          <a href="#" class="footer-item golden-text">Техника</a>
+          <a href="#" class="footer-item golden-text">Инструмент</a>
+          <a href="#" class="footer-item golden-text">Спецпредложения</a>
         </div>
-        <div class="down-footer">
+        <div class="down-footer display-flex">
           <div class="copyright">© 2010–2013 Компания «Техномарт» Все права защищены</div>
           <div class="social-block">
             <a href="#" class="social">Vkontakte</a>
@@ -203,7 +199,7 @@
           <div class="feedback">Обратная связь: 
             <span class="golden-text">info@technomart.ru</span>
           </div>
-          <div class="design">Дизайн сайта — 
+          <div class="author">Дизайн сайта — 
             <span class="golden-text">www.Glukhanko.ru</span>
           </div>
         </div>
