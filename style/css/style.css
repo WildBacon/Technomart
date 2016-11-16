@@ -13,6 +13,8 @@
   font-style: normal;
 }
 
+/*Общие стили*/
+
 body {
   font-family: 'Cuprum', 'Arial', sans-serif;
   font-size: 16px;
@@ -45,10 +47,20 @@ h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul,li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/*Header*/
+
+.main-header {
+  margin-bottom: 60px;
 }
 
 .top-panel {
@@ -58,30 +70,124 @@ ul,li {
 .top-panel a,
 .top-panel input {
   color: white;
+  font-size: 17px;
+  line-height: 18px;
+  
   box-sizing: border-box;
-  height: 42px;
 }
 
 .logo {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  
+  padding: 9px;
   width: 220px;
-  float: left;
-  margin-right: 10px;
+  background: #ee3643;
+  position: relative;
+}
+
+.logo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background: #b52933;
+  height: 5px;
+  bottom: -5px;
+  left: 0;
+  right: 0;
 }
 
 .top-panel form {
-  padding-left: 40px;
+  position: relative;
+}
+
+.top-panel input {
+  background: #293449;
+  border: none;
+  padding: 12px 10px 12px 50px;;
+  width: 270px;
+}
+
+.top-panel form::before {
+  content: '\1f50d';
+  font-family: 'symbols-technomart';
+  font-size: 17px;
+  color: #fff;
+  opacity: .3;
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+
+::-webkit-input-placeholder {
+  opacity: 1;
+  font-size: 17px;
+  
+}
+::-moz-placeholder {
+  opacity: 1;
+  font-size: 17px;
+  
+}
+:-ms-input-placeholder { 
+  opacity: 1;
+  font-size: 17px;
+  
+}
+:-moz-placeholder { 
+  opacity: 1;
+  font-size: 17px;
+}
+
+.bookmark,
+.basket,
+.order-btn {
+  width: 150px;
+  font-size: 17px;
+  line-height: 18px;
+  padding: 12px 0;
+  position: relative;
 }
 
 .bookmark
 {
   margin-left: auto;
+  padding-left: 50px;
+  padding-right: 15px;
 }
+
 .basket {
-  margin-left: 20px;
+  padding-left: 50px;
+  padding-right: 15px;
 }
+
+
+.bookmark::before,
+.basket::before {
+  content: '\1f50d';
+  font-family: 'symbols-technomart';
+  font-size: 17px;
+  color: #fff;
+  opacity: .3;
+  position: absolute;
+  top: 12px;
+  left: 18px;
+}
+
+.bookmark::before {
+  content: '\1f516';
+}
+
+.basket::before {
+  content: '\62';
+}
+
 .order-btn {
-  width: 150px;
-  margin-left: 20px;
+  background: #63a63e;
+  text-align: center;
 }
 
 .middle-panel {
@@ -104,7 +210,6 @@ ul,li {
 }
 
 .main-nav {
-  margin-bottom: 60px;
 }
 
 .main-nav ul {
@@ -127,7 +232,6 @@ ul,li {
 .modal-grid {
   height: 460px;
   background: #f1f1f1;
-  margin: 60px 0 50px;
 }
 
 .popular {
