@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&subset=cyrillic');
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic-ext');
 
  @font-face {
   font-family: 'symbols-technomart';
@@ -67,6 +67,7 @@ ul,li {
   padding: 10px;
   text-align: center;
   
+  display: inline-block;
   background: #ee3643;
   border: none;
   border-radius: 4px;
@@ -574,11 +575,15 @@ ul,li {
   position: relative;
   
   margin-bottom: 20px;
+  background: #f7f3ec;
 }
 
 .bar h2 {
   font-size: 30px;
   line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .bar a {
@@ -595,17 +600,74 @@ ul,li {
 
 .good-item {
   font-size: 16px;
+  text-align: center;
+  
   display: inline-block;
+  position: relative;
   vertical-align: top;
   width: 220px;
   box-sizing: border-box;
   margin-right: 20px;
   margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  
+  background: url('../../img/item-tool.jpg') no-repeat;
 }
-
+ 
 .good-item:nth-child(4n){
   margin-right: 0;
 }
+
+.good-item h3 {
+  color: #000;
+  width: 160px;
+  margin: 180px auto 10px auto;
+  margin-top: 180px;
+}
+
+.good-item span {
+  line-height: 18px;
+  height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.price {
+  width: 140px;
+  margin-bottom: 22px;
+  position: relative;
+  display: block;
+  margin-left: 42px;
+}
+
+.price::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: -19.5px;
+  
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+  border-top: 19px solid #fff;
+}
+
+.price::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -19.5px;
+  
+  border-left: 19px solid transparent;
+  border-right: 19px solid transparent;
+  border-bottom: 19px solid #fff;
+}
+
 
 .manufac {
   margin-bottom: 65px;
@@ -616,26 +678,112 @@ ul,li {
 }
 
 .manufac-item {
-  font-size: 16px;
   display: inline-block;
   vertical-align: top;
+  
   width: 220px;
   height: 145px;
   box-sizing: border-box;
   margin-right: 20px;
   margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+  
+  position: relative;
+  text-align: center;
 }
 
 .manufac-item:nth-child(4n) {
   margin-right: 0;
 }
 
+.manufac-item::after {
+  content: '';
+  position: relative;
+  display: inline-block;
+  background: url(../../sprite-1.png) no-repeat;
+  margin-top: 54px;
+  width: 126px;
+  height: 37px;
+  background-position: -160px -3px;
+}
+
+.manufac-item:nth-child(2)::after {
+    margin-top: 52.5px;
+    width: 123px;
+    height: 40px;
+    background-position: -336px -365px;
+}
+.manufac-item:nth-child(3)::after {
+    margin-top: 50.5px;
+    width: 146px;
+    height: 44px;
+    background-position: -342px -3px;
+}
+.manufac-item:nth-child(4)::after {
+    margin-top: 23.5px;
+    width: 200px;
+    height: 88px;
+    background-position: -3px -365px;
+}
+.manufac-item:nth-child(5)::after {
+    margin-top: 57px;
+    width: 169px;
+    height: 31px;
+    background-position: -494px -3px;
+}
+.manufac-item:nth-child(6)::after {
+    margin-top: 36px;
+    width: 121px;
+    height: 73px;
+    background-position: -209px -365px;
+}
+.manufac-item:nth-child(7)::after {
+    margin-top: 24.5px;
+    width: 151px;
+    height: 96px;
+    background-position: -3px -3px;
+}
+.manufac-item:nth-child(8)::after {
+    margin-top: 38px;
+    width: 204px;
+    height: 69px;
+    background-position: -669px -3px;
+}
+
+/*Service-block*/
+
 .service-block {
-  height: 520px;
   background: #f2f6f8;
   margin-bottom: 80px;
 }
 
+.service-header {
+  padding-top: 60px;
+  width: 450px;
+  padding-bottom: 70px;
+}
+
+.service-header h3 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.service-header p {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.service-control {
+  display: none;
+}
+
+
+/*About-block*/
 .about {
   margin-bottom: 90px;
 }
