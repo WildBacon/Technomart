@@ -167,10 +167,13 @@
               <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             </div>
             <div class="service-slider">
-              <div class="service-control">
-                <input type="radio" class="service-btn">
-                <input type="radio" class="service-btn">
-                <input type="radio" class="service-btn">
+              <input type="radio" id="delivery" name="service-btn" checked>
+              <input type="radio" id="guarantee" name="service-btn">
+              <input type="radio" id="credit" name="service-btn">
+              <div class="control-panel">
+                <label class="active" for="delivery">Доставка</label>
+                <label for="guarantee">Гарантия</label>
+                <label for="credit">Кредит</label>
               </div>
               <div class="service delivery">
                 <h3>Доставка</h3>
