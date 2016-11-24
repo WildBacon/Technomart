@@ -212,7 +212,7 @@ a.logo {
 }
 
 .middle-panel {
-  margin: 50px 0 40px;
+  margin: 48px 0 38px;
 }
 
 .description {
@@ -316,7 +316,7 @@ a.logo {
 /*Modal-grid*/
 
 .modal-grid {
-  padding: 60px 0 50px;
+  padding: 60px 0 54px;
   flex-wrap: wrap;
 }
 
@@ -918,7 +918,7 @@ a.logo {
 
 /*About-block*/
 .about {
-  margin-bottom: 90px;
+  margin-bottom: 84px;
 }
 
 .about-us {
@@ -1001,7 +1001,7 @@ a.logo {
   font-size: 18px;
   line-height: 24px;
   flex-basis: 100%; 
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   justify-content: space-between;
 }
 
@@ -1020,7 +1020,7 @@ a.logo-footer {
   line-height: 24px;
   flex-basis: 100%; 
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding-bottom: 46px;
 }
 
 .golden-text {
@@ -1044,7 +1044,7 @@ a.logo-footer {
   font-size: 16px;
   line-height: 18px;
   background: #293449;
-  padding: 35px 0 32px 0;
+  padding: 36px 0 32px 0;
 }
 
 .copyright {
@@ -1082,6 +1082,7 @@ a.logo-footer {
   
   width: 40px;
   height: 40px;
+  padding-top: 11px;
   border-radius: 50%;
 }
 .social-block a:nth-child(1)::before {
