@@ -713,11 +713,13 @@ a.logo:active {
   right: 24px;
 }
 
+.catalog-list,
 .goods-block {
   font-size: 0;
 }
 
-.good-item {
+.catalog-item,
+.goods-item {
   font-family: 'Open Sans', 'Arial', sans-serif;
   font-size: 16px;
   text-align: center;
@@ -734,14 +736,14 @@ a.logo:active {
   cursor: auto;
   background: url('../../img/item-tool.jpg') no-repeat;
 }
-
-.good-item:hover {
+.catalog-item:hover,
+.goods-item:hover {
   background: #fff;
   box-shadow: 0px 10px 25px 0px rgba(0,0,0,.5);
   transition: .5s ease;
 }
- 
-.good-item:nth-child(4n){
+.catalog-item:nth-child(3n)
+.goods-item:nth-child(4n){
   margin-right: 0;
 }
 
@@ -751,8 +753,8 @@ a.logo:active {
   position: absolute;
   margin-top: 45px;
 }
-
-.good-item:hover .goods-hover {
+.catalog-item:hover .goods-hover,
+.goods-item:hover .goods-hover {
   display: block;
 }
 
@@ -816,7 +818,8 @@ a.bookmark-btn:active {
   opacity: .3;
 }
 
-.good-item h3 {
+.catalog-item h3,
+.goods-item h3 {
   font-size: 16px;
   color: #000;
   width: 160px;
@@ -824,7 +827,8 @@ a.bookmark-btn:active {
   margin-top: 180px;
 }
 
-.good-item span {
+.catalog-item span,
+.goods-item span {
   line-height: 18px;
   height: 18px;
   color: #999999;
@@ -1196,6 +1200,72 @@ a.bookmark-btn:active {
 .contact-block .btn {
   width: 300px;
 }
+
+/*Breadcrumps*/
+.breadcrumps {
+  font-size: 0;
+}
+
+.breadcrumps a {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000;
+  
+  display: inline-block;
+  vertical-align: top;
+  padding: 21px 0;
+}
+
+a.home-page {
+  font-family: 'symbols-technomart';
+  opacity: .3;
+}
+a.home-page:hover {
+  opacity: 1;
+}
+
+a.breadcrump {
+  padding-left: 40px;
+  text-transform: uppercase;
+  position: relative;
+}
+a.breadcrump:hover {
+  text-decoration: underline;
+}
+
+a.breadcrump::before {
+  content: '\3e';
+  position: absolute;
+  font-family: 'symbols-technomart';
+  font-size: 14px;
+  line-height: 18px;
+  left: 18px;
+  opacity: .3;
+}
+
+/*Main-header*/
+.catalog-header {
+  margin-bottom: 20px;
+}
+
+.catalog-header h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  padding: 30px;
+  background: #f2f6f8;
+}
+
+/*Catalog-filter*/
+.catalog-filter {
+  float: left;
+  width: 220px;
+}
+
+/*Price-filter*/
+
+
 
 /*FOOTER*/
 .main-footer {
