@@ -681,13 +681,6 @@ a.logo:active {
 
 /*Popular block*/
 
-.popular {
-  
-}
-
-.goods {
-  
-}
 
 .bar {
   padding: 30px;
@@ -1435,13 +1428,125 @@ a.breadcrump::before {
 .power-supply-item input:disabled ~ label::before {
   opacity: .1;
 }
-/*  display: none;*/
 
 /*Catalog-block*/
 .catalog-block {
   float: right;
   width: 700px;
 }
+
+.catalog-list {
+  margin-bottom: 32px;
+}
+
+.sort-panel {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 9px 18px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  background: #f7f3ec;
+  border-radius: 4px;
+}
+
+.sort-panel h4 {
+  float: left;
+}
+
+.sort-right {
+  float: right;
+}
+
+.sort-right > a {
+  display: inline-block;
+  vertical-align: top;
+  color: #c5c5c5;
+  margin-left: 60px;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort-right > a:hover {
+  color: #000;
+}
+
+.sort-right > a.active {
+  color: #ee3643;
+  border: none;
+}
+
+.arrow-block {
+  display: inline-block;
+  vertical-align: top;
+  width: 70px;
+  margin-left: 30px;
+  font-size: 0px;
+  position: relative;
+}
+
+.arrow-block a:first-child::before {
+  font-family: 'symbols-nerds';
+  font-size: 15px;
+  line-height: 20px;
+  color: #c6c2bd;
+  position: absolute;
+  content: '\25b2';
+  left: 15px;
+}
+
+.arrow-block a:last-child::before {
+  font-family: 'symbols-nerds';
+  font-size: 13px;
+  line-height: 20px;
+  color: #c6c2bd;
+  position: absolute;
+  content: '\25bc';
+  right: 15px;
+}
+.arrow-block a:hover::before {
+  color: #000;
+}
+.arrow-block a.active::before {
+  color: #ee3643;
+}
+
+/*Paginator*/
+.paginator {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  margin-bottom: 60px;
+}
+.paginator a {
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  width: 38px;
+  padding: 9px;
+  margin-right: 10px;
+  box-sizing: border-box;
+  border: #e5e5e5 1px solid;
+  border-radius: 4px;
+}
+.paginator a:hover {
+  border-color: #bdc6ca;
+}
+.paginator a:active {
+  border-color: #ee3643;
+}
+
+a.page.current {
+  color: #fff;
+  background: #ee3643;
+  border-color: #ee3643;
+}
+
+a.next-page {
+  text-transform: uppercase;
+  width: 140px;
+}
+
+/*Infromation-block*/
 
 /*FOOTER*/
 .main-footer {
