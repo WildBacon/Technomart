@@ -256,6 +256,11 @@ a.logo:active {
   padding-right: 15px;
 }
 
+.top-panel .filled {
+  background: #ee3643;
+}
+
+
 .basket {
   padding-left: 50px;
   padding-right: 15px;
@@ -344,6 +349,7 @@ a.logo:active {
  text-align: center;
 }
 
+/*User-block:;*/
 .user-block {
   float: right;
 }
@@ -351,11 +357,11 @@ a.logo:active {
 .login,
 .register {
   font-size: 21px;
-  line-height: 21px;
+  line-height: 18px;
   display: inline-block;
   background: #fff;
   color: #000;
-  padding: 12px 25px;
+  padding: 13.5px 25px;
   box-sizing: border-box;
   width: 120px;
 }
@@ -398,6 +404,66 @@ a.logo:active {
   width: 150px;
 }
 
+/*User-block authorized*/
+.username {
+  display: block;
+  width: 300px;
+  padding: 13.5px 48px;
+  box-sizing: border-box;
+  font-size: 21px;
+  line-height: 18px;
+  background: #fff;
+  color: #000;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.username:active {
+  color: #cacaca;
+}
+
+.username::before,
+.username::after {
+  content: '\2386';
+  font-family: 'symbols-technomart';
+  font-size: 18px;
+  line-height: 18px;
+  color: #c5c5c5;
+  position: absolute;
+}
+.username::before{
+  content: '👨';
+  left: 15px;
+}
+.username::after {
+  content: '\241b';
+  right: 10px;
+}
+.username:hover::before,
+.username:hover::after {
+  color: #32425c;
+}
+.username:active::before,
+.username:active::after {
+  color: #c5c5c5;
+}
+.user-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 17px;
+}
+.user-link:hover {
+  color: #ee3643;
+}
+.user-link:active {
+  color: #cacaca;
+}
+
+/*Main-nav*/
 .main-nav { 
   justify-content: space-around;
   -webkit-justify-content: space-around;
