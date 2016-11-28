@@ -1252,7 +1252,9 @@ a.breadcrump::before {
 .catalog-header h1 {
   font-size: 30px;
   line-height: 30px;
+  font-weight: 500;
   color: #32425c;
+  text-transform: uppercase;
   padding: 30px;
   background: #f2f6f8;
 }
@@ -1261,11 +1263,119 @@ a.breadcrump::before {
 .catalog-filter {
   float: left;
   width: 220px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  text-transform: uppercase;
 }
 
+.catalog-filter h3 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.catalog-filter h3:hover {
+  background: #fafafa;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.05);
+}
+.catalog-filter h3::after {
+  content: '\2c4';
+  font-family: 'symbols-technomart';
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 20px;
+  position: absolute;
+  opacity: .3;
+  top: 5px;
+  right: 12px;
+}
+.catalog-filter h3:hover::after {
+  opacity: 1;
+}
+
+.catalog-filter h4 {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 9px 18px;
+  margin-bottom: 15px;
+  background: #f7f3ec;
+  border-radius: 4px;
+}
 /*Price-filter*/
+.price-filter {
+  font-size: 0;
+  margin-bottom: 15px;
+}
 
+.control-block {
+  background: #f7f3ec;
+  border-radius: 4px;
+  position: relative;
+  padding: 39px 0;
+  margin-bottom: 9px;
+}
 
+.control-scale {
+  width: 170px;
+  margin: 0 auto;
+  height: 2px;
+  background: #d7dcde;
+}
+
+.control-bar {
+  background: #00ca74;
+  margin-left: 0px;
+  margin-right: 50px;
+  height: 2px;
+}
+
+.toggle-left,
+.toggle-right {
+  position: absolute;
+  top: 30px;
+  width: 4px;
+  height: 4px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background: #ababab;
+  border: 8px #fff solid;
+}
+
+.toggle-left {
+  left: 25px;
+}
+.toggle-right {
+  right: 65px
+}
+
+.price-filter input {
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  background: #f7f3ec;
+  width: 95px;
+  box-sizing: border-box;
+}
+
+.price-filter input:first-of-type {
+  margin-right: 30px;
+}
+
+/*Manufacturer*/
+
+/*Power-supply*/
+
+/*Catalog-block*/
+.catalog-block {
+  float: right;
+  width: 700px;
+}
 
 /*FOOTER*/
 .main-footer {
