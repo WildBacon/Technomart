@@ -1150,7 +1150,7 @@ a.bookmark-btn:active {
   font-size: 13px;
   line-height: 24px;
   margin-bottom: 25px;
-  letter-spacing: -.4px;
+  letter-spacing: -.025em;
 }
 
 .trans-company {
@@ -1547,6 +1547,25 @@ a.next-page {
 }
 
 /*Infromation-block*/
+.information {
+  background: #f2f6f8;
+  padding: 65px 0;
+}
+
+.information h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.information p {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: -.015em;
+}
 
 /*FOOTER*/
 .main-footer {
